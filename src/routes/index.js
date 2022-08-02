@@ -8,6 +8,6 @@ router.get("/about",(req,res)=> res.render("about", {tittle:"Acerca de nosotros"
 
 router.get("/contact",(req,res)=> res.render("contact",{tittle:"Contacto"}))//ruta contacto
 
-router.get("/productos",(req,res)=> res.render("productos",{tittle:"productos"}))//ruta contacto
+router.get("/Productos",(req,res)=> res.render("productos",{tittle:"productos"}))//ruta contacto
 
 export default router
