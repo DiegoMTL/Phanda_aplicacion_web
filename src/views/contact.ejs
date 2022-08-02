@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= tittle%></title>
+    <%- include('partials/head')%>
+</head>
+<body>
+    <%- include('partials/navigation')%>
+    <div class="p-5 d-flex justify-content-start align-items-start">
+        <img src="/img/logo.png" class="w-100">
+                
+
+    <header class="container p-3 flex-column justify-content-end align-items-end">
+        <!--class="container vh-100 w-75 p-5 d-flex justify-content-center align-items-center"-->
+            <div class="card bg-dark text-white text-center">
+                <div class="card-header">
+                    <h3>Contactanos</h3>
+                </div>
+                <div class="card-body text-start" > 
+                    <form>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="ejemplo@ejemplo.com" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message">Mensaje</label>
+                            <textarea type="message" rows="6"  class="form-control" placeholder="Ingrese su mensaje"></textarea>
+                        </div>
+                        <button class="btn btn-light btn-block border">
+                            <h6 class="text-dark">Enviar</h6>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+    </div>
+    <%- include('partials/footer')%>
+</body>
+
+</html>
